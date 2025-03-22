@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Year Display -->
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2025"
+            android:textColor="#FFFFFF"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+        <!-- Progress Text -->
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.8% complete. Week 12"
+            android:textColor="#AAAAAA"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- First row of weeks (1-13) -->
+        <LinearLayout
+            android:id="@+id/rowOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:baselineAligned="true">
+            
+            <!-- Week dots for first row (13 dots) -->
+            <ImageView android:id="@+id/dot_1" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_past_week" android:contentDescription="Week 1" />
+            <ImageView android:id="@+id/dot_2" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_past_week" android:contentDescription="Week 2" />
+            <ImageView android:id="@+id/dot_3" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_past_week" android:contentDescription="Week 3" />
+            <ImageView android:id="@+id/dot_4" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_past_week" android:contentDescription="Week 4" />
+            <ImageView android:id="@+id/dot_5" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_past_week" android:contentDescription="Week 5" />
+            <ImageView android:id="@+id/dot_6" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_past_week" android:contentDescription="Week 6" />
+            <ImageView android:id="@+id/dot_7" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_past_week" android:contentDescription="Week 7" />
+            <ImageView android:id="@+id/dot_8" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_past_week" android:contentDescription="Week 8" />
+            <ImageView android:id="@+id/dot_9" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_past_week" android:contentDescription="Week 9" />
+            <ImageView android:id="@+id/dot_10" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_past_week" android:contentDescription="Week 10" />
+            <ImageView android:id="@+id/dot_11" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_past_week" android:contentDescription="Week 11" />
+            <ImageView android:id="@+id/dot_12" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_current_week" android:contentDescription="Week 12" />
+            <ImageView android:id="@+id/dot_13" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 13" />
+        </LinearLayout>
+
+        <!-- Second row of weeks (14-26) -->
+        <LinearLayout
+            android:id="@+id/rowTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:baselineAligned="true">
+            
+            <!-- Week dots for second row (13 dots) -->
+            <ImageView android:id="@+id/dot_14" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 14" />
+            <ImageView android:id="@+id/dot_15" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 15" />
+            <ImageView android:id="@+id/dot_16" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 16" />
+            <ImageView android:id="@+id/dot_17" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 17" />
+            <ImageView android:id="@+id/dot_18" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 18" />
+            <ImageView android:id="@+id/dot_19" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 19" />
+            <ImageView android:id="@+id/dot_20" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 20" />
+            <ImageView android:id="@+id/dot_21" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 21" />
+            <ImageView android:id="@+id/dot_22" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 22" />
+            <ImageView android:id="@+id/dot_23" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 23" />
+            <ImageView android:id="@+id/dot_24" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 24" />
+            <ImageView android:id="@+id/dot_25" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 25" />
+            <ImageView android:id="@+id/dot_26" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 26" />
+        </LinearLayout>
+
+        <!-- Third row of weeks (27-39) -->
+        <LinearLayout
+            android:id="@+id/rowThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:baselineAligned="true">
+            
+            <!-- Week dots for third row (13 dots) -->
+            <ImageView android:id="@+id/dot_27" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 27" />
+            <ImageView android:id="@+id/dot_28" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 28" />
+            <ImageView android:id="@+id/dot_29" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 29" />
+            <ImageView android:id="@+id/dot_30" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 30" />
+            <ImageView android:id="@+id/dot_31" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 31" />
+            <ImageView android:id="@+id/dot_32" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 32" />
+            <ImageView android:id="@+id/dot_33" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 33" />
+            <ImageView android:id="@+id/dot_34" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 34" />
+            <ImageView android:id="@+id/dot_35" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 35" />
+            <ImageView android:id="@+id/dot_36" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 36" />
+            <ImageView android:id="@+id/dot_37" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 37" />
+            <ImageView android:id="@+id/dot_38" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 38" />
+            <ImageView android:id="@+id/dot_39" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 39" />
+        </LinearLayout>
+        
+        <!-- Fourth row of weeks (40-52) -->
+        <LinearLayout
+            android:id="@+id/rowFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:baselineAligned="true">
+            
+            <!-- Week dots for fourth row (13 dots) -->
+            <ImageView android:id="@+id/dot_40" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 40" />
+            <ImageView android:id="@+id/dot_41" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 41" />
+            <ImageView android:id="@+id/dot_42" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 42" />
+            <ImageView android:id="@+id/dot_43" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 43" />
+            <ImageView android:id="@+id/dot_44" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 44" />
+            <ImageView android:id="@+id/dot_45" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 45" />
+            <ImageView android:id="@+id/dot_46" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 46" />
+            <ImageView android:id="@+id/dot_47" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 47" />
+            <ImageView android:id="@+id/dot_48" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 48" />
+            <ImageView android:id="@+id/dot_49" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 49" />
+            <ImageView android:id="@+id/dot_50" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 50" />
+            <ImageView android:id="@+id/dot_51" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 51" />
+            <ImageView android:id="@+id/dot_52" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:src="@drawable/dot_future_week" android:contentDescription="Week 52" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout> 
